@@ -2,6 +2,7 @@ package src;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.TextArea;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
@@ -43,12 +44,14 @@ public class FancyConsole extends JFrame implements ActionListener{
 		JPanel ta = new JPanel();
 		JPanel tb = new JPanel();
 		console = new TextArea(25,50);
+		console.setFont(new Font("Monospaced",Font.PLAIN,12));
 		console.setEditable(false);
 		console.setBackground(Color.WHITE);
 		ta.setBackground(Color.LIGHT_GRAY);
 		tb.setBackground(Color.LIGHT_GRAY);
 		ta.add(console);
 		box = new TextField(50);
+		box.setFont(new Font("Monospaced",Font.PLAIN,12));
 		tb.add(box);
 		this.add(ta);
 		this.add(tb,BorderLayout.PAGE_END);

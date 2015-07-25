@@ -83,7 +83,7 @@ public class Frederic {
 				i++;
 			}
 			else
-				out.println("command not recognized");
+				out.println("Command not recognized");
 			
 		}
 	}
@@ -107,7 +107,7 @@ public class Frederic {
 			else if (text.trim().equalsIgnoreCase("stop"))
 				out.println("Frederic stopped.");
 			else
-				out.println("command not recognized");
+				out.println("Command not recognized");
 		}
 	}
 	/**
