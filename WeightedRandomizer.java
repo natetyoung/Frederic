@@ -1,11 +1,12 @@
 package src;
-/** This class allows for flexible weighted randomization
- * 
+
+import java.util.ArrayList;
+import java.util.List;
+/** 
+ * This class allows for flexible weighted randomization
  * @author Nate Young
  * 
  */
-import java.util.ArrayList;
-import java.util.List;
 public class WeightedRandomizer {
 	private List<Double> weights;
 	
@@ -85,7 +86,7 @@ public class WeightedRandomizer {
 	
 	/**
 	 * Picks a random index out of however many this instance contains, taking weights into account.
-	 * @return A random index (0...size()) after taking weights into account
+	 * @return A random index (0...size()-1) after taking weights into account
 	 */
 	public int pickIndex(){
 		double sum = 0, rand = Math.random()*this.sum();
@@ -94,7 +95,7 @@ public class WeightedRandomizer {
 			sum += this.weights.get(i);
 			i++;
 		}
-		return i;
+		return i-1;
 	}
 	
 	public static void main(String[] args){
