@@ -1,4 +1,7 @@
-package src;
+package io.github.nateyoung.frederic.command;
+
+import io.github.nateyoung.frederic.Frederic;
+
 /**
  * A simple interface to represent a possible action to be taken when the user enters "do something"
  * @author Nate Young

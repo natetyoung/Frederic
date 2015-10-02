@@ -1,4 +1,5 @@
-package src;
+package io.github.nateyoung.frederic.console;
+
 /**
  * A simple class to encapsulate the the reading capabilities of <code>FancyConsole</code>.
  * <br> Only one method, <code>readLine()</code>. For use in the <code>Frederic</code> class.

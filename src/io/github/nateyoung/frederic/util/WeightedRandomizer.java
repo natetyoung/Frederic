@@ -1,4 +1,4 @@
-package src;
+package io.github.nateyoung.frederic.util;
 
 import java.util.ArrayList;
 import java.util.List;
