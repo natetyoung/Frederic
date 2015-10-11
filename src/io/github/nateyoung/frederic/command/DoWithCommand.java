@@ -1,8 +1,8 @@
-package io.github.nateyoung.frederic.command;
+package io.github.natetyoung.frederic.command;
 
 import java.io.File;
 
-import io.github.nateyoung.frederic.Frederic;
+import io.github.natetyoung.frederic.Frederic;
 /**
  * A simple interface to represent a possible action to be taken when the user enters "do something with" 
  * and a file name.
