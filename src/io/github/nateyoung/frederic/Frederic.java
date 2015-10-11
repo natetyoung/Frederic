@@ -1,4 +1,4 @@
-package io.github.nateyoung.frederic;
+package io.github.natetyoung.frederic;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,11 +9,11 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
-import io.github.nateyoung.frederic.command.DoCommand;
-import io.github.nateyoung.frederic.command.DoWithCommand;
-import io.github.nateyoung.frederic.console.FCRead;
-import io.github.nateyoung.frederic.console.FancyConsole;
-import io.github.nateyoung.frederic.util.WeightedRandomizer;
+import io.github.natetyoung.frederic.command.DoCommand;
+import io.github.natetyoung.frederic.command.DoWithCommand;
+import io.github.natetyoung.frederic.console.FCRead;
+import io.github.natetyoung.frederic.console.FancyConsole;
+import io.github.natetyoung.frederic.util.WeightedRandomizer;
 
 /**This class is the central class for the Frederic program. <br>
  * Client programs should usually construct only one instance of this class. Each <code>Frederic</code> 
