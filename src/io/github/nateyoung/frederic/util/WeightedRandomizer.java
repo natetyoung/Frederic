@@ -1,4 +1,4 @@
-package io.github.nateyoung.frederic.util;
+package io.github.natetyoung.frederic.util;
 
 import java.util.ArrayList;
 import java.util.List;
