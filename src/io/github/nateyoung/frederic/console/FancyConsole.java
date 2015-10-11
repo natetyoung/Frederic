@@ -1,14 +1,14 @@
-package src;
+package io.github.nateyoung.frederic.console;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.TextArea;
 import java.awt.TextField;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,10 +20,10 @@ import javax.swing.JPanel;
  *
  */
 public class FancyConsole extends JFrame implements ActionListener{
+	private static final long serialVersionUID = 1L;
 	private TextArea console;
 	private TextField box;
 	private String newText;
-	//private 
 	
 	/**Constructs a new <code>FancyConsole</code> instance. <br><br>
 	 * By default the frame is not visible. It is recommended that client methods call 
@@ -39,13 +39,20 @@ public class FancyConsole extends JFrame implements ActionListener{
 	 */
 	public FancyConsole(String title, int width, int height){
 		super(title);
+		
 		this.setSize(width,height);
+		Dimension dimensions = Toolkit.getDefaultToolkit().getScreenSize();
+		int dimWidth = dimensions.width;
+		int dimHeight = dimensions.height;
+		this.setLocation(dimWidth/2-width/2, dimHeight/2-height/2);
 		this.setResizable(false);
+		
 		JPanel ta = new JPanel();
 		JPanel tb = new JPanel();
 		console = new TextArea(25,50);
 		console.setFont(new Font("Monospaced",Font.PLAIN,12));
 		console.setEditable(false);
+		console.setFocusable(false);
 		console.setBackground(Color.WHITE);
 		ta.setBackground(Color.LIGHT_GRAY);
 		tb.setBackground(Color.LIGHT_GRAY);
