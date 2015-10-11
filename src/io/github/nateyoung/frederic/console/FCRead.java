@@ -1,4 +1,4 @@
-package io.github.nateyoung.frederic.console;
+package io.github.natetyoung.frederic.console;
 
 /**
  * A simple class to encapsulate the the reading capabilities of <code>FancyConsole</code>.
