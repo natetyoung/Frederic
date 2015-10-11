@@ -1,4 +1,4 @@
-package io.github.nateyoung.frederic.console;
+package io.github.natetyoung.frederic.console;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
