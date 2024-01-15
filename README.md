@@ -1,5 +1,5 @@
 # Frederic
-Java implementation of Petrovich (http://dangermouse.net/esoteric/petrovich.html): operant conditioning in command systems
+Java implementation of [Petrovich](http://dangermouse.net/esoteric/petrovich.html): operant conditioning in command systems
 
 Operant Conditioning comes to command systems!
 This is a java implementation of DangerMouse's Petrovich operating system description.
